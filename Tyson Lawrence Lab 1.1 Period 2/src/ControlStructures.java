@@ -13,15 +13,15 @@ public class ControlStructures {
 	public static void PrimePrinter (int x, int i,int count)
     {isPrime (x); isPrime (i);   
      if (count<=10)
-    		 {System.out.println(isPrime);}
+    		 {System.out.println(isPrime (i));}
      if (count>10 && count <=20)
-             {System.out.println (isPrime);}
+             {System.out.println (isPrime (i));}
      if (count >20 && count <=30)
-             {System.out.println(isPrime);}
+             {System.out.println(isPrime (i));}
      if (count>30 && count <=40)
-             {System.out.println(isPrime);}
+             {System.out.println(isPrime (i));}
      if (count>40 && count<=50)
-             {System.out.println (isPrime);}
+             {System.out.println (isPrime (i));}
 	 return;
 	}
 	
