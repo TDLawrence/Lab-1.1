@@ -2,7 +2,7 @@
 public class ControlStructures {
 //Tyson Lawrence Control Structures Period 2
 	public static void main(String[] args) 
-	{PrimePrinter();fooBarBazPrint();
+	{PrimePrinter(50);fooBarBaz(500);
 		
 		
 		
@@ -10,67 +10,49 @@ public class ControlStructures {
 		
 	}
 	   
-	public static void PrimePrinter (int x, int i,int count)
-    {isPrime (x); isPrime (i);   
-     if (count<=10)
-    		 {System.out.println(isPrime (i));}
-     if (count>10 && count <=20)
-             {System.out.println (isPrime (i));}
-     if (count >20 && count <=30)
-             {System.out.println(isPrime (i));}
-     if (count>30 && count <=40)
-             {System.out.println(isPrime (i));}
-     if (count>40 && count<=50)
-             {System.out.println (isPrime (i));}
-	 return;
+	public static void PrimePrinter (int limit)
+    { int count=0;
+      int x=2;
+      while (count<=limit)
+    	  {if (isPrime (x))
+    	  {System.out.print(x+",");
+    	  count ++;
+    	  if (count%10==0)
+    	  {System.out.println();}
+    	  }
+           x++;
+    	  }
 	}
 	
-	public static boolean isPrime(int x)
-	{      	
-        {int number;int z;
-         for (z = 2;2*z<=number;z++)
-         {if (number%z==0)
-         {return false;}
-         } return true;
-    }
-			
-    }
-	public static boolean isPrime (int i)
-	{int number;
-	 boolean x= isPrime (x);
-	 if (!x)
-	 {return number;}
-			 
+	public static boolean isPrime (int num)
+	{int x=2;
+	   while (x<=num/2)
+	      {if (num %x==0)
+	       {return false;}
+	     x++;
+	       }
+	  return true;
 	}
-	
-	public static void foorBarBazPrint(int j,int count)
-	{fooBarBaz (a);
-	 if count <=500
-			 {System.out.println(fooBarBaz);}
-    }
+		
+   
 	
 	
-    public static String fooBarBaz (int a)
-    { for (int a1=0;a1<=500;a1++)
-      {String printout=""; 
-       String foo=printout+"foo"
-       String Bar=printout+"Bar"
-       String Baz=printout+"Baz"
-      if (a1%3==0)
-      {return foo;}
-      if (a1%7==0)
-      {return Bar;}
-      if (a1%10==0)
-      {return Baz;}
-      
+    public static void fooBarBaz (int a)
+    { int a1=0;
+      { while (a1<=500)
+          if (a1%3==0)
+          {System.out.print("foo");}
+          if (a1%7==0)
+          {System.out.print("bar");}
+           if (a1%10==0)
+          {System.out.print("baz");}
+           a1++;
+        }
+	    System.out.print(a1);   
     }
-    	
-		   
-	      
-	     
-	      
+    
     }
-    }
+
 	      
 	    
 	
