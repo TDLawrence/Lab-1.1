@@ -35,20 +35,33 @@ public class ControlStructures {
 	}
 		
    
-	
+	public static boolean division (int b)
+	{if ((b%3!=0) && (b%7!=0) && (b%10!=0))
+	{return true;}
+	else
+	{return false;}
+	}
 	
     public static void fooBarBaz (int a)
-    { int a1=0;
-      { while (a1<=500)
-          if (a1%3==0)
-          {System.out.print("foo");}
-          if (a1%7==0)
-          {System.out.print("bar");}
-           if (a1%10==0)
-          {System.out.print("baz");}
-           a1++;
-        }
-	    System.out.print(a1);   
+    { int a1=1;
+         while (a1<=a)
+          { {if (a1%3==0)
+              {System.out.print("foo ");}
+              if (a1%7==0)
+               {System.out.print("bar ");}
+                if (a1%10==0)
+               {System.out.print("baz ");}
+                if (division (a1))
+                {System.out.print(a1+ " ");}
+                
+          }
+     
+                 
+                 a1++;
+              
+          }
+                
+	   
     }
     
     }
